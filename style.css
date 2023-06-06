@@ -1,0 +1,153 @@
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(189, 213, 235);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main-container {
+  position: relative;
+  background-color: white;
+  width: 650px;
+  padding: 30px;
+  border-radius: 15px;
+  border-bottom-right-radius: 150px;
+}
+.top-section {
+  display: flex;
+}
+
+.input-field {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field .day-type {
+  color: hsl(0, 6%, 29%);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 4.9px;
+  letter-spacing: 1.1px;
+}
+
+.input-field input {
+  color: hsl(0, 0%, 8%);
+  font-weight: 800;
+  padding: 15px;
+  border-radius: 5px;
+  width: 130px;
+  border: 1px solid hsl(0, 0%, 76%);
+}
+
+.input-field .invalid-red-text {
+  color: hsl(0, 100%, 67%);
+  border-color: hsl(0, 100%, 67%);
+}
+
+.hide {
+  display: none;
+}
+.enter-valid-date {
+  margin: 0;
+  margin-top: 8px;
+  color: hsl(0, 100%, 67%);
+  font-size: 11px;
+  font-style: italic;
+}
+
+.line-icon {
+  top: 120px;
+  position: absolute;
+}
+
+.line {
+  margin-top: 20px;
+  position: relative;
+  width: 600px;
+  border-top: 1px solid hsl(0, 0%, 76%);
+}
+.icon-container {
+  cursor: pointer;
+  position: relative;
+  top: -37px;
+  left: 580px;
+  background-color: hsl(259, 100%, 65%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.icon-image {
+  width: 60px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.bottom-section {
+  margin: 0;
+  margin-top: 50px;
+}
+
+.bottom-section p {
+  margin: 0 20px;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-style: italic;
+  color: hsl(0, 0%, 8%);
+  font-size: 90px;
+}
+
+.bottom-section span {
+  color: hsl(259, 100%, 65%);
+}
+
+given-colors {
+  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 94%);
+  color: hsl(0, 0%, 76%);
+  color: (0, 1%, 44%);
+  color: hsl(0, 0%, 8%);
+  /* primary colors:- */
+  color: hsl(259, 100%, 65%);
+  color: hsl(0, 100%, 67%);
+}
+
+@media (max-width: 800px) {
+  body {
+    background-color: black;
+  }
+  .main-container {
+    width: 80%;
+    min-width: 500px;
+  }
+  .input-field {
+    margin-right: 20px;
+  }
+  .input-field .day-type {
+    color: rgb(52, 50, 50);
+    font-size: 15px;
+  }
+  .input-field input {
+    width: 80%;
+  }
+  .line {
+    width: 520px;
+  }
+  .line-icon {
+    margin: 30px 0;
+  }
+  .icon-container {
+    left: 40%;
+  }
+
+  .bottom-section {
+    margin-top: 120px;
+  }
+
+  .bottom-section p {
+    font-size: 75px;
+  }
+}

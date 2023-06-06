@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="top-section">
+        <div class="input-field">
+          <label for="day" class="day-type">Day</label>
+          <input id="day" class="" type="text" placeholder="DD" />
+        </div>
+        <div class="input-field">
+          <label for="month" class="day-type">Month</label>
+          <input class="" type="text" id="month" placeholder="MM" />
+        </div>
+        <div class="input-field">
+          <label for="year" class="day-type">Year</label>
+          <input type="text" class="" id="year" placeholder="YYYY" />
+        </div>
+      </div>
+      <p class="enter-valid-date hide">Must be a valid date</p>
+
+      <div class="line-icon">
+        <hr class="line" />
+        <div class="icon-container">
+          <img
+            class="icon-image"
+            src="./assets/images/icon-arrow.svg"
+            width="100px"
+            alt="icon-arrow"
+          />
+        </div>
+      </div>
+
+      <div class="bottom-section">
+        <p><span id="number-of-years">--</span>years</p>
+        <p><span id="number-of-months">--</span>months</p>
+        <p><span id="number-of-days">--</span>days</p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
